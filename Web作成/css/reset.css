@@ -1,0 +1,138 @@
+/* ================================================
+  🌐 Universal Reset + Base Styles for Web Project
+  対応：Chrome / Firefox / Safari / Edge / モバイル対応
+================================================= */
+
+/* Box sizing: 信頼できる全要素共通設定 */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+/* 全要素の初期化（デフォルトマージン・パディング削除） */
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+p,
+div,
+span,
+img,
+a,
+table,
+tr,
+th,
+td,
+input,
+button,
+textarea,
+select {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+  background: none;
+}
+
+/* セクション要素の display:block 指定（旧ブラウザ対策） */
+header,
+footer,
+nav,
+section,
+article,
+main,
+aside,
+figure,
+figcaption {
+  display: block;
+}
+
+/* リストの見出し記号を無効化 */
+ol,
+ul {
+  list-style: none;
+}
+
+/* テーブル関連：隙間を潰す */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 画像：レスポンシブ化 & 下の隙間を削除 */
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+/* aタグ：文字色と装飾の初期化 */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ボタン：ブラウザ依存の装飾を消す */
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font: inherit;
+  color: inherit;
+}
+
+/* フォーム要素：共通化 */
+input,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+/* ベースフォント設定 */
+body {
+  font-family: "Yu Gothic", "Noto Sans JP", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+}
+
+/* 見出し初期設定（サイズ・余白などは後で個別に指定） */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+}
+
+/* 強調系 */
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+/* スクロールの慣性（モバイル対応） */
+html {
+  -webkit-overflow-scrolling: touch;
+}
